@@ -1,0 +1,20 @@
+@import "../../../Assets/Styles/open-sans.scss";
+@import "../../../Assets/Styles/variables.scss";
+
+.header {
+  border: solid rgba(0, 0, 0, 0.15);
+  border-width: 1px 0;
+  box-shadow: 0 0.5em 1.5em rgb(0 0 0 / 10%),
+    0 0.125em 0.5em rgb(0 0 0 / 15%);
+
+  .container {
+    padding: $zero;
+    max-width: $persent-100;
+
+    .nav-link {
+        font-family: $open-sans;
+        font-weight: 600;
+        font-size: $rem-1;
+    }
+  }
+}
