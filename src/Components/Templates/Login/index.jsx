@@ -37,7 +37,7 @@ const LoginTemplate = ({ setToken }) => {
   }
 
   // submit credentials to login
-  const submitLoginForm = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     //todo - Not able showRequiredMessage = false
     //(! showRequiredMessage) && setShowRequiredMessage(false);
@@ -71,13 +71,13 @@ const LoginTemplate = ({ setToken }) => {
   return (
     <>
       <main className="login-container">
-        <form  className="form-signin" onSubmit={submitLoginForm}>
+        <form  className="form-signin" data-testid="login-form" onSubmit={handleSubmit}>
           <h1 className="h3 fw-normal"><img src={Logo} alt={STATIC_CONTENT.NAME} height="72" /></h1>
           <p className="mt-2 mb-5 strong">{STATIC_CONTENT.LOGIN_MESSAGE}</p>
 
           <div className="form-floating">
             <input
-              type={STATIC_CONTENT.EMAIL}
+              type="email"
               className="form-control"
               autoComplete="off"
               placeholder={STATIC_CONTENT.EMAIL_PLACEHOLDER}

@@ -6,7 +6,7 @@ export const STATIC_CONTENT = {
     SIGNING : "Sign in...",
     LOGOUT : "Logout",
     LOGIN_MESSAGE : "Hello there Sign In to Continue",
-    EMAIL : "email",
+    EMAIL : "Email",
     EMAIL_ADDRESS : "Email address",
     EMAIL_PLACEHOLDER : "name@example.com",
     PASSWORD : "Password",
