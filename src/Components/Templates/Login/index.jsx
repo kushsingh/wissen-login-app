@@ -77,7 +77,7 @@ const LoginTemplate = ({ setToken }) => {
 
           <div className="form-floating">
             <input
-              type={STATIC_CONTENT.EMAIL}
+              type="email"
               className="form-control"
               autoComplete="off"
               placeholder={STATIC_CONTENT.EMAIL_PLACEHOLDER}
